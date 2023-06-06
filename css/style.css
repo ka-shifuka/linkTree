@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Ubuntu&display=swap");
+/* global */
+:root {
+  --primary: #639cd9;
+  --secondary: #5454c5;
+  --navy: #342056;
+  --black: #220e24;
+  --dark: #202020;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: ubuntu, arial;
+}
+.icon-s {
+  width: 16px;
+  height: 16px;
+}
+.icon-m {
+  width: 24px;
+  height: 24px;
+}
+.icon-l {
+  width: 30px;
+  height: 30px;
+}
+/* global */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 200ms;
+}
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1,
+.navbar div {
+  padding: 0 5%;
+}
+.navbar .logo {
+  color: var(--primary);
+}
+.navbar .change-mode {
+  position: absolute;
+  top: 1.6rem;
+  right: 7%;
+  background-color: transparent;
+  border: 0;
+}
+.navbar .change-mode:nth-child(2) {
+  color: #eee;
+}
+/* navbar */
+
+/* main */
+.main {
+  margin: 0 5%;
+  margin-top: 7rem;
+}
+.link-section {
+  width: auto;
+  min-height: 10rem;
+  border-radius: 15px;
+  background-color: #eeeeee;
+  padding: 10px;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+}
+.link-section .link-list {
+  width: auto;
+  min-height: 20rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.link-section .link-list .link {
+  width: auto;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  list-style: none;
+}
+.link-section .link-list .link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #eeeeee;
+}
+.link-section .link-list .link span {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* main */
+
+/* footer */
+.footer {
+  width: auto;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer span {
+  color: var(--primary);
+}
+/* footer */
+
+/* dark mode */
+.container.dark {
+  background-color: var(--dark);
+}
+p.dark {
+  color: #eeeeee;
+}
+.link-section.dark {
+  background-color: #101010;
+}
+/* dark mode */
+
+/* media */
+@media screen and (min-width: 600px) {
+  .main {
+    margin: 0 15%;
+    margin-top: 7rem;
+  }
+}
