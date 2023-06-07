@@ -25,6 +25,10 @@
   width: 30px;
   height: 30px;
 }
+p.dark {
+  color: #eeeeee;
+}
+
 /* global */
 
 .container {
@@ -35,6 +39,10 @@
   justify-content: space-between;
   transition: 200ms;
 }
+.container.dark {
+  background-color: var(--dark);
+}
+
 /* navbar */
 .navbar {
   width: 100%;
@@ -76,6 +84,9 @@
   box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.2);
   transition: 200ms;
 }
+.link-section.dark {
+  background-color: #101010;
+}
 .link-section .link-list {
   width: auto;
   min-height: 20rem;
@@ -87,23 +98,33 @@
 .link-section .link-list .link {
   width: auto;
   height: 50px;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #202020;
+  justify-content: flex-start;
+  padding-left: 30%;
   list-style: none;
 }
+.link-section .link-list .link.light {
+  background-color: #eeeeee;
+}
+.link-section .link-list .link.dark {
+  background-color: #202020;
+}
+
 .link-section .link-list .link a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-decoration: none;
+}
+.link-section .link-list .link a.light {
   color: #eeeeee;
+}
+.link-section .link-list .link a.dark {
+  color: #202020;
 }
 .link-section .link-list .link span {
   font-size: 24px;
   font-weight: bold;
+  margin: 0 15px;
 }
 /* main */
 
@@ -120,22 +141,10 @@
 }
 /* footer */
 
-/* dark mode */
-.container.dark {
-  background-color: var(--dark);
-}
-p.dark {
-  color: #eeeeee;
-}
-.link-section.dark {
-  background-color: #101010;
-}
-/* dark mode */
-
 /* media */
 @media screen and (min-width: 600px) {
   .main {
-    margin: 0 15%;
+    margin: 0 25%;
     margin-top: 7rem;
   }
 }

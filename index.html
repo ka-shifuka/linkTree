@@ -24,7 +24,13 @@
     <link rel="icon" href="" type="image/x-icon" />
 
     <!-- library -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.2/cdn.js" integrity="sha512-O+ameuymZr7auqNl/HvUtOOzIMFEB9wwMLAYe3k/clA44a2oGtV+6Xh7+lFiztz0gBN+t27z23xxQQLG67vv9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.2/cdn.js"
+      integrity="sha512-O+ameuymZr7auqNl/HvUtOOzIMFEB9wwMLAYe3k/clA44a2oGtV+6Xh7+lFiztz0gBN+t27z23xxQQLG67vv9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- style css -->
@@ -70,36 +76,47 @@
         <main class="main">
           <section :class="(darkMode)? 'dark' : '';" class="link-section">
             <ul class="link-list">
-              <li class="link">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
                 <a
+                  :class="(darkMode)? 'dark' : 'light';"
                   href="https://www.facebook.com/profile.php?id=100072780309432&mibextid=ZbWKwL"
                 >
                   <i data-feather="facebook"></i>
                   <span>facebook</span>
                 </a>
               </li>
-              <li class="link">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
                 <a
+                  :class="(darkMode)? 'dark' : 'light';"
                   href="https://instagram.com/arya_memes_dev?igshid=ZDc4ODBmNjlmNQ=="
                 >
                   <i data-feather="instagram"></i>
                   <span>instagram</span>
                 </a>
               </li>
-              <li class="link">
-                <a href="https://github.com/aryadev127">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://github.com/aryadev127"
+                >
                   <i data-feather="github"></i>
                   <span>github</span>
                 </a>
               </li>
-              <li class="link">
-                <a href="wa.me/+6281249883087">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="wa.me/+6281249883087"
+                >
                   <i data-feather="phone"></i>
                   <span>whatsapp</span>
                 </a>
               </li>
-              <li class="link">
-                <a href="https://aryadev127.github.io/">
+              <li :class="(darkMode)? 'light' : 'dark';" class="link">
+                <a
+                  :class="(darkMode)? 'dark' : 'light';"
+                  href="https://aryadev127.github.io/"
+                >
                   <i data-feather="user"></i>
                   <span>portfolio</span>
                 </a>
